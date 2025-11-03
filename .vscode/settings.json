@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "usbpd_dpm_core.h": "c",
+        "usbpd.h": "c"
+    }
+}

@@ -1,0 +1,12 @@
+../USBPD/usbpd_pwr_if.c:120:21:USBPD_PWR_IF_Init	1
+../USBPD/usbpd_pwr_if.c:138:21:USBPD_PWR_IF_SupplyReady	5
+../USBPD/usbpd_pwr_if.c:173:21:USBPD_PWR_IF_ReadVA	1
+../USBPD/usbpd_pwr_if.c:186:21:USBPD_PWR_IF_Enable_VConn	1
+../USBPD/usbpd_pwr_if.c:199:21:USBPD_PWR_IF_Disable_VConn	1
+../USBPD/usbpd_pwr_if.c:217:6:USBPD_PWR_IF_GetPortPDOs	2
+../USBPD/usbpd_pwr_if.c:257:21:USBPD_PWR_IF_SearchRequestedPDO	1
+../USBPD/usbpd_pwr_if.c:269:6:USBPD_PWR_IF_AlarmType	1
+../USBPD/usbpd_pwr_if.c:280:6:USBPD_PWR_IF_Alarm	1
+../USBPD/usbpd_pwr_if.c:293:9:USBPD_PWR_IF_GetVBUSStatus	8
+../USBPD/usbpd_pwr_if.c:322:6:USBPD_PWR_IF_UpdateVbusThreshold	1
+../USBPD/usbpd_pwr_if.c:333:6:USBPD_PWR_IF_ResetVbusThreshold	1
