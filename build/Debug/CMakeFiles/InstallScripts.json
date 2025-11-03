@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/nick/Dokumenty/psu-test/psutest/build/Debug/cmake_install.cmake",
-		"/home/nick/Dokumenty/psu-test/psutest/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
