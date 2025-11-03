@@ -20,7 +20,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "usbpd.h"
-#include "gui_api.h"
 
 #include "app_tcpp.h"
 
@@ -33,8 +32,6 @@
 /* USER CODE END 1 */
 
 /* Private variables ---------------------------------------------------------*/
-#define BSP_BOARD_NAME  "SNK1M1";
-#define BSP_BOARD_ID    "MB1360";
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -52,9 +49,6 @@ void MX_USBPD_Init(void)
   {
     while(1);
   }
-
-  /* Initialize GUI before retrieving PDO from RAM */
-  GUI_Init(BSP_GetBoardName, BSP_GetBoardID, HW_IF_PWR_GetVoltage, HW_IF_PWR_GetCurrent);
 
   /* Initialise the DPM application */
   if (USBPD_OK != USBPD_DPM_UserInit())
@@ -75,24 +69,6 @@ void MX_USBPD_Init(void)
   __enable_irq();
   /* USER CODE END EnableIRQ */
 
-}
-
-/**
-  * @brief  This method returns the board name
-  * @retval pointer to the board name string
-  */
-__weak const uint8_t* BSP_GetBoardName(void)
-{
-  return (const uint8_t*)BSP_BOARD_NAME;
-}
-
-/**
-  * @brief  This method returns the board ID
-  * @retval pointer to the board ID string
-  */
-__weak const uint8_t* BSP_GetBoardID(void)
-{
-  return (const uint8_t*)BSP_BOARD_ID;
 }
 
 /* USER CODE BEGIN 4 */
