@@ -303,9 +303,6 @@ void USBPD_DPM_Run(void)
     UTIL_SEQ_Run(~0);
   } while (1u == 1u);
 #else /* !USE_STM32_UTILITY_OS */
-  do
-  {
-
     if ((HAL_GetTick() - DPM_Sleep_start[USBPD_PORT_COUNT]) >= DPM_Sleep_time[USBPD_PORT_COUNT])
     {
       DPM_Sleep_time[USBPD_PORT_COUNT] = USBPD_CAD_Process();
@@ -325,8 +322,6 @@ void USBPD_DPM_Run(void)
     }
 
     USBPD_DPM_UserExecute(NULL);
-
-  } while (1u == 1u);
 #endif /* USE_STM32_UTILITY_OS */
 }
 
